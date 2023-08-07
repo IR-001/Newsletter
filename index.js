@@ -11,9 +11,6 @@ app.get("/", (req, res) => {
 	res.sendFile(__dirname + "/signup.html");
 });
 
-// mailchimp api key: 8bf0b7b37a832bdc588834a8e438cf6d-us21
-// unique id: 90d9a14d97
-
 // Sign up routes
 app.post("/", (req, res) => {
 	// get data from the inputs form
@@ -40,7 +37,7 @@ app.post("/", (req, res) => {
 	const url = "https://us21.api.mailchimp.com/3.0/lists/90d9a14d97";
 	const options = {
 		method: "POST",
-		auth: "ayak01:8bf0b7b37a832bdc588834a8e438cf6d-us21",
+		auth: "ayak01:41c0b0c3d998703981bbbeebcff41a1f-us21",
 	};
 
 	const request = https.request(url, options, (response) => {
